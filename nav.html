@@ -59,9 +59,12 @@
 
 
 
-        <!--        <button style="border: 2px solid #000;margin-bottom: 20px;" data-bs-toggle="modal" data-bs-target="#quickOrder">-->
-        <!--            Быстрый заказ-->
-        <!--        </button>-->
+        <button data-modal="Modal" style="border: 2px solid #000;margin-bottom: 20px;">
+            Modal
+        </button>
+        <button data-modal="Modal2" style="border: 2px solid #000;margin-bottom: 20px;">
+            Modal 2
+        </button>
 
     </div>
 
@@ -74,14 +77,52 @@
     <div class="modal" id="Modal">
         <div class="modal__bg modal-bg _close-modal"></div>
         <div class="modal__dialog">
-            <div class="modal__top">
-                <div class="text32 medium-text">
-                    Title
-                </div>
-                <button class="close-btn _close-modal">
-                    <img src="img/close.svg" alt="">
-                </button>
+            <button class="close-btn _close-modal">
+                <img src="img/burger2.svg" alt="">
+            </button>
+            <div class="modal__title">
+                Взять в аренду htc vive
             </div>
+            <div class="modal__desc">
+                Оставьте ваши данные, и мы напишем вам в Whatsapp
+            </div>
+            <form action="" class="modal-form">
+                <div class="fg fg--gray">
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="fg fg--gray">
+                    <input type="tel" placeholder="Ваш телефон">
+                </div>
+                <button class="modal-form__btn m-btn m-btn-yellow">
+                    <span>Забронировать сейчас</span>
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <div class="modal" id="Modal2">
+        <div class="modal__bg modal-bg _close-modal"></div>
+        <div class="modal__dialog">
+            <button class="close-btn _close-modal">
+                <img src="img/burger2.svg" alt="">
+            </button>
+            <div class="modal__title">
+                Взять в аренду htc vive
+            </div>
+            <div class="modal__desc">
+                Оставьте ваши данные, и мы напишем вам в Whatsapp
+            </div>
+            <form action="" class="modal-form">
+                <div class="fg fg--gray _error">
+                    <input type="text" placeholder="Ваше имя">
+                </div>
+                <div class="fg fg--gray _success">
+                    <input type="tel" placeholder="Ваш телефон">
+                </div>
+                <button class="modal-form__btn m-btn m-btn-yellow">
+                    <span>Забронировать сейчас</span>
+                </button>
+            </form>
         </div>
     </div>
 
